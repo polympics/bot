@@ -6,10 +6,11 @@ A serverless Discord bot to act as a frontend to the API, using Discord slash co
 
 1. Create the config files:
 
-   ```bash
-   $ cp wrangler.toml.example wrangler.toml
-   $ cp project_config.ts.example project_config.ts
-   ```
+    ```bash
+    $ cp wrangler.toml.example wrangler.toml
+    $ cp project_config.ts.example project_config.ts
+    ```
+
 2. Install [Node JS](https://nodejs.org).
 3. Install dependencies with `npm install --save-dev`.
 4. Authenticate `wrangler`: `$ npx wrangler login`.
@@ -22,4 +23,3 @@ A serverless Discord bot to act as a frontend to the API, using Discord slash co
 ## Contributing
 
 Please make sure to format code with `npm run format` before committing. You can run a local server with `npx wrangler dev`, but for this to be any use Discord requires that it must run over HTTPS, which I haven't worked out yet. I recommend just running a test copy of the worker and getting logs with `npx wrangler tail`.
-
