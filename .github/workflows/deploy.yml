@@ -35,4 +35,4 @@ jobs:
           npm install --save-dev
           npm run register
           npm run build
-          npx run wrangler publish
+          npx wrangler publish
