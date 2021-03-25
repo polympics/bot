@@ -1,8 +1,7 @@
 node_modules/
-worker/
+/worker/
 .cargo-ok
 package-lock.json
 dist/
 project_config.ts
 wrangler.toml
-
