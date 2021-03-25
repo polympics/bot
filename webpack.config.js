@@ -1,0 +1,27 @@
+const path = require('path');
+
+const mode = 'production';
+
+module.exports = {
+    entry: './worker_src/index.ts',
+    output: {
+        filename: 'worker.js',
+        path: path.join(__dirname, 'dist'),
+    },
+    mode,
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js'],
+        plugins: [],
+    },
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                loader: 'ts-loader',
+                options: {
+                    transpileOnly: true,
+                },
+            },
+        ],
+    },
+};

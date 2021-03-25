@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "ES2020",
+        "module": "CommonJS",
+        "lib": ["ES2020", "WebWorker"],
+        "alwaysStrict": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "types": ["@cloudflare/workers-types"]
+    },
+    "include": [
+        "registrar.ts",
+        "worker_src/*.ts",
+        "worker_src/**/*.ts",
+        "./node_modules/@cloudflare/workers-types/index.d.ts"
+    ],
+    "exclude": ["node_modules/", "dist/"]
+}
