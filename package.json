@@ -7,7 +7,7 @@
         "build": "webpack",
         "format": "prettier --write '**/*.{ts,js,css,json,md}'",
         "register": "ts-node registrar.ts",
-        "deploy": "ts-node registrar.ts && wrangler deploy"
+        "deploy": "ts-node registrar.ts && wrangler publish"
     },
     "author": "Artemis21 <artemisdev21@gmail.com>",
     "repository": {
