@@ -34,7 +34,7 @@ export interface Embed {
     provider?: EmbedProvider;
     fields?: Array<EmbedField>;
     footer?: EmbedFooter;
-    timestamp: string;
+    timestamp?: string;
     author?: EmbedAuthor;
     image?: EmbedMedia;
     thumbnail?: EmbedMedia;

@@ -36,5 +36,5 @@ export interface Command extends BaseCommand {
 
 /** A group of subcommands. */
 export interface CommandGroup extends BaseCommand {
-    subcommands: Array<Command>;
+    subcommands: Array<Command | CommandGroup>;
 }

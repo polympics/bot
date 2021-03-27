@@ -40,7 +40,7 @@ function serialiseCommand(command: Command | CommandGroup, topLevel = true) {
         description: command.description,
     };
     if (!topLevel) {
-        data.type = 'callback' in command ? 2 : 1;
+        data.type = 'callback' in command ? 1 : 2;
     }
     if ('callback' in command) {
         if (command.options) {

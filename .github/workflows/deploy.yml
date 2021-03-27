@@ -33,6 +33,4 @@ jobs:
           WRANGLER_INSTALL_PATH: ${{ env.GITHUB_WORKSPACE }}
         run: |
           npm install --save-dev
-          npm run register
-          npm run build
-          npx wrangler publish
+          npm run deploy
