@@ -1,6 +1,6 @@
 {
     "name": "polympics-bot",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "Serverless Discord bot for Polympics using slash commands and Cloudflare workers.",
     "main": "index.js",
     "scripts": {

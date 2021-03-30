@@ -47,7 +47,7 @@ function serialiseCommand(command: Command | CommandGroup, topLevel = true) {
             data.options = command.options.map(serialiseCommandOption);
         }
     } else {
-        data.options = command.subcommands.map(subcommand =>
+        data.options = Object.values(command.subcommands).map(subcommand =>
             serialiseCommand(subcommand, false)
         );
     }
