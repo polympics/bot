@@ -7,6 +7,7 @@ import {
     InteractionType,
     PingInteractionData,
 } from '../api_types';
+import { DISCORD_PUBLIC_KEY } from '../../project_config';
 
 /** Convert a hex string to a Uint8Array */
 function hexToBytes(hexString: string): Uint8Array | null {

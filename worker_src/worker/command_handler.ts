@@ -63,7 +63,7 @@ export class CommandContext {
     /** Get the callback for this specific command. */
     getCommand() {
         let command = commands[this.commandNameParts[0]];
-        for (const namePart in this.commandNameParts.slice(1)) {
+        for (const namePart of this.commandNameParts.slice(1)) {
             if ('subcommands' in command) {
                 command = command.subcommands[namePart];
             }

@@ -5,15 +5,13 @@ import { permissionOptions, userOption } from '../../util/option_types';
 export default {
     name: 'grant',
     description: 'Give a user permissions.',
-    options: [
-        userOption,
-        ...permissionOptions
-    ],
+    options: [userOption, ...permissionOptions],
     callback: async function(
-        context: CommandContext, args: Record<string, any>
+        context: CommandContext,
+        args: Record<string, any>
     ): Promise<CommandResponse> {
         return {
-            content: `You provided the args: ${JSON.stringify(args)}`
+            content: `You provided the args: ${JSON.stringify(args)}`,
         };
     },
 };

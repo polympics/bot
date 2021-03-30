@@ -8,12 +8,12 @@ import view from './view';
 export default {
     name: 'users',
     description: 'Manage, create or view accounts.',
-    subcommands: [
+    subcommands: {
         view,
-        setTeam,
+        'set-team': setTeam,
         sync,
         grant,
         revoke,
-        deleteUser
-    ]
+        delete: deleteUser,
+    },
 };

@@ -1,6 +1,6 @@
 {
     "name": "polympics-bot",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Serverless Discord bot for Polympics using slash commands and Cloudflare workers.",
     "main": "index.js",
     "scripts": {
@@ -20,6 +20,7 @@
         "@cloudflare/wrangler": "^1.15.0",
         "axios": "^0.21.1",
         "dotenv": "^8.2.0",
+        "exports-loader": "^1.1.1",
         "prettier": "^1.17.0",
         "ts-loader": "^8.0.18",
         "ts-node": "^9.1.1",
@@ -28,7 +29,7 @@
         "webpack-cli": "^4.5.0"
     },
     "dependencies": {
-        "polympics": "^0.4.1",
+        "polympics": "^0.4.7",
         "serverless-cloudflare-workers": "^1.2.0",
         "tweetnacl": "^1.0.3"
     }

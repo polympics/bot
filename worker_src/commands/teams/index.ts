@@ -7,11 +7,5 @@ import view from './view';
 export default {
     name: 'teams',
     description: 'Manage, create or view teams.',
-    subcommands: [
-        view,
-        list,
-        create,
-        rename,
-        deleteTeam
-    ]
+    subcommands: { view, list, create, rename, delete: deleteTeam },
 };

@@ -6,5 +6,5 @@ import users from './users/index';
 export const commands: Record<string, Command | CommandGroup> = {
     register,
     users,
-    teams
+    teams,
 };

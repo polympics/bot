@@ -9,19 +9,20 @@ export default {
         {
             name: 'search',
             description: 'Narrow results by searching.',
-            type: OptionType.STRING
+            type: OptionType.STRING,
         },
         {
             name: 'page',
             description: 'View a different page (default 1).',
-            type: OptionType.INTEGER
-        }
+            type: OptionType.INTEGER,
+        },
     ],
     callback: async function(
-        context: CommandContext, args: Record<string, any>
+        context: CommandContext,
+        args: Record<string, any>
     ): Promise<CommandResponse> {
         return {
-            content: `You provided the args: ${JSON.stringify(args)}`
+            content: `You provided the args: ${JSON.stringify(args)}`,
         };
     },
 };

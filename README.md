@@ -15,10 +15,9 @@ A serverless Discord bot to act as a frontend to the API, using Discord slash co
 3. Install dependencies with `npm install --save-dev`.
 4. Authenticate `wrangler`: `npx wrangler login`.
 5. Get your account ID with `npx wrangler whoami`, then replace the account ID in `wrangler.toml` with it.
-6. Fill in the values in `project_config.ts` from the [Discord Developer Portal](https://discord.com/developers/applications).
+6. Fill in the values in `project_config.ts`. Some values can be found on the [Discord Developer Portal](https://discord.com/developers/applications), others by contacting the Polympics server admin.
 7. Run `npm run register` to register the available commands with Discord.
-8. Run `npx wrangler secret put DISCORD_PUBLIC_KEY`, then paste your Discord app's public key, available at the same link.
-9. Run `npx wrangler publish` to publish!
+8. Run `npx wrangler publish` to publish!
 
 ## Contributing
 
